@@ -1,0 +1,10 @@
+{
+  "/[locale]/about/page": "/[locale]/about",
+  "/[locale]/contact/page": "/[locale]/contact",
+  "/[locale]/page": "/[locale]",
+  "/[locale]/portfolio/page": "/[locale]/portfolio",
+  "/[locale]/services/interior/page": "/[locale]/services/interior",
+  "/[locale]/services/page": "/[locale]/services",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found"
+}

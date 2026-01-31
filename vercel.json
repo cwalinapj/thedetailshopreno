@@ -1,0 +1,56 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "framework": "nextjs",
+  "regions": ["sfo1"],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/es/servicios",
+      "destination": "/es/services/",
+      "permanent": true
+    },
+    {
+      "source": "/es/portafolio",
+      "destination": "/es/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contacto",
+      "destination": "/es/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nosotros",
+      "destination": "/es/about/",
+      "permanent": true
+    }
+  ]
+}

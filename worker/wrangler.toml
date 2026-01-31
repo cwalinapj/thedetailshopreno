@@ -1,0 +1,26 @@
+name = "thedetailshopreno-assets"
+main = "asset-router.js"
+compatibility_date = "2024-01-01"
+
+# Custom domain for assets
+routes = [
+  { pattern = "assets.thedetailshopreno.com/*", zone_name = "thedetailshopreno.com" }
+]
+
+[vars]
+B2_BUCKET_NAME = "thedetailshopreno-assets"
+B2_ENDPOINT = "https://f004.backblazeb2.com"
+
+# Production environment
+[env.production]
+name = "thedetailshopreno-assets-prod"
+routes = [
+  { pattern = "assets.thedetailshopreno.com/*", zone_name = "thedetailshopreno.com" }
+]
+
+# Staging environment
+[env.staging]
+name = "thedetailshopreno-assets-staging"
+routes = [
+  { pattern = "staging-assets.thedetailshopreno.com/*", zone_name = "thedetailshopreno.com" }
+]
