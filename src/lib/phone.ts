@@ -1,7 +1,7 @@
 export const PHONE_BY_LOCALE = {
   en: {
     tel: "+17757502920",
-    display: "+1 775 750 2920",
+    display: "+1 775-750-2920",
   },
   es: {
     tel: "+17754405342",

@@ -19,17 +19,17 @@
     "book": "Book Now"
   },
   "hero": {
-    "preheading": "THINKING ABOUT RENEWING YOUR CAR?",
-    "title": "GIVE IT A PREMIUM TREATMENT TODAY!",
-    "subtitle": "As the leading car detailing company in the Reno/Sparks area, Car Detailing Reno stands as the premier choice for vehicle owners seeking unparalleled automotive care. Our mission is to redefine vehicle appearance through meticulous detailing, ensuring every client experiences the pinnacle of excellence in car care services.",
-    "description": "Whether at our shop, your residence or job site, our skilled team of detailers delivers comprehensive car cleaning services with convenience and precision.",
-    "contactBtn": "CONTACT US",
-    "formTitle": "QUICK BOOKING REQUEST",
+    "preheading": "RENO'S PREMIER AUTO DETAILING STUDIO",
+    "title": "EXQUISITE CARE FOR DISCERNING OWNERS",
+    "subtitle": "Experience automotive artistry at its finest. We specialize in concierge-level detailing for luxury, exotic, and collector vehicles — transforming each car into a masterpiece with obsessive attention to every surface, seam, and finish.",
+    "description": "White-glove service at our studio or your preferred location. We bring precision, discretion, and uncompromising standards to every appointment.",
+    "contactBtn": "SCHEDULE CONSULTATION",
+    "formTitle": "REQUEST A CONSULTATION",
     "formName": "Name",
     "formEmail": "Email",
     "formPhone": "Phone Number",
-    "formNotes": "Notes",
-    "formSubmit": "Proceed To Booking"
+    "formNotes": "Vehicle & Service Interest",
+    "formSubmit": "Submit Request"
   },
   "remsa": {
     "title": "PROUD PARTNER OF",

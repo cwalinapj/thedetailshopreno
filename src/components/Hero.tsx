@@ -1,14 +1,58 @@
 'use client';
 
-import {useTranslations} from 'next-intl';
+import {useState} from 'react';
+import {useTranslations, useLocale} from 'next-intl';
 import Link from 'next/link';
-import {trackFielddBooking} from '@/lib/analytics';
+
+const FORM_WORKER_URL = process.env.NEXT_PUBLIC_FORM_WORKER_URL || '';
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const locale = useLocale();
 
-  const handleBookClick = () => {
-    trackFielddBooking('hero_cta_click');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    notes: '',
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({...prev, [e.target.name]: e.target.value}));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.phone) {
+      return;
+    }
+
+    setStatus('loading');
+
+    try {
+      const response = await fetch(FORM_WORKER_URL, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          ...formData,
+          source: 'hero-form',
+          locale,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({name: '', email: '', phone: '', notes: ''});
+        // Reset after 5 seconds
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   // Hero background image - pressure wash silhouette from Envato
@@ -61,23 +105,66 @@ export default function Hero() {
         <div className="hero-form">
           <div className="booking-form-card">
             <h2 className="booking-form-title">{t('formTitle')}</h2>
-            <form className="booking-form">
-              <input type="text" placeholder={t('formName')} className="form-input" />
-              <input type="email" placeholder={t('formEmail')} className="form-input" />
-              <input type="tel" placeholder={t('formPhone')} className="form-input" />
-              <textarea placeholder={t('formNotes')} className="form-textarea" rows={3}></textarea>
-              <Link
-                href="https://supremexautodetail.fieldd.co/"
-                target="_blank"
-                rel="noopener"
-                className="btn btn-primary btn-block"
-                onClick={handleBookClick}
-                data-gtm-action="fieldd_booking"
-                data-gtm-label="hero"
-              >
-                {t('formSubmit')}
-              </Link>
-            </form>
+
+            {status === 'success' ? (
+              <div className="form-success">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <p>Thank you! We&apos;ll be in touch shortly.</p>
+              </div>
+            ) : (
+              <form className="booking-form" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder={t('formName')}
+                  className="form-input"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder={t('formEmail')}
+                  className="form-input"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder={t('formPhone')}
+                  className="form-input"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+                <textarea
+                  name="notes"
+                  placeholder={t('formNotes')}
+                  className="form-textarea"
+                  rows={3}
+                  value={formData.notes}
+                  onChange={handleChange}
+                />
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block"
+                  disabled={status === 'loading'}
+                  data-gtm-action="form_submit"
+                  data-gtm-label="hero"
+                >
+                  {status === 'loading' ? 'Submitting...' : t('formSubmit')}
+                </button>
+                {status === 'error' && (
+                  <p className="form-error">Something went wrong. Please try again or call us directly.</p>
+                )}
+              </form>
+            )}
           </div>
         </div>
       </div>
