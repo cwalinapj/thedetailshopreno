@@ -2,6 +2,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {routing} from '../../../../i18n/routing';
 import {generatePageMetadata} from '@/lib/seo';
 import Link from 'next/link';
+import { getPhone } from "@/lib/phone";
 
 type Locale = (typeof routing.locales)[number];
 
@@ -69,7 +70,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                 </div>
                 <div className="contact-details">
                   <h3>Phone</h3>
-                  <a href="tel:+17754405342">+1 (775) 440-5342</a>
+                  <a href={`tel:`}>{phone.display}</a>
                 </div>
               </div>
 

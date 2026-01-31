@@ -3,6 +3,7 @@ import {routing} from '../../../../../i18n/routing';
 import {generatePageMetadata} from '@/lib/seo';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getPhone } from "@/lib/phone";
 
 type Locale = (typeof routing.locales)[number];
 
@@ -106,7 +107,7 @@ export default async function InteriorServicesPage({params}: {params: Promise<{l
           <h2>{t('ctaTitle')}</h2>
           <p>{t('ctaText')}</p>
           <div className="cta-buttons">
-            <a href="tel:+17754405342" className="btn btn-primary">{t('callNow')}</a>
+            <a href={`tel:`} className="btn btn-primary">{t('callNow')}</a>
             <Link href="https://supremexautodetail.fieldd.co/" target="_blank" rel="noopener" className="btn btn-white">{t('bookOnline')}</Link>
           </div>
         </div>
