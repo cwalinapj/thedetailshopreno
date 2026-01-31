@@ -22,6 +22,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
     : routing.defaultLocale;
 
   setRequestLocale(locale);
+  const phone = getPhone(locale);
 
   return (
     <section className="contact-page">
@@ -70,7 +71,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                 </div>
                 <div className="contact-details">
                   <h3>Phone</h3>
-                  <a href={`tel:`}>{phone.display}</a>
+                  <a href={`tel:${phone.tel}`}>{phone.display}</a>
                 </div>
               </div>
 
