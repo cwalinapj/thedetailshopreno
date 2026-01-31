@@ -189,6 +189,10 @@
       "book": {
         "title": "CONFIRM BOOKING",
         "description": "Receive confirmation via SMS and/or email."
+      },
+      "comparePrice": {
+        "title": "COMPARE PRICES",
+        "description": "View transparent pricing for all services."
       }
     }
   },

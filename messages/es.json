@@ -189,6 +189,10 @@
       "book": {
         "title": "CONFIRMA TU RESERVA",
         "description": "Recibirás confirmación por SMS y/o correo."
+      },
+      "comparePrice": {
+        "title": "COMPARA PRECIOS",
+        "description": "Ve precios transparentes para todos los servicios."
       }
     }
   },
