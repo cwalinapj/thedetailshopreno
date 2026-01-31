@@ -1,0 +1,26 @@
+# Robots.txt for Car Detailing Reno
+# https://thedetailshopreno.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://thedetailshopreno.com/sitemap.xml
+
+# Block admin/API paths (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

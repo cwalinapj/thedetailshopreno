@@ -5,6 +5,7 @@ import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GTMScript from '@/components/GTMScript';
+import {generateLocalBusinessSchema} from '@/lib/seo';
 import '@/styles/globals.css';
 
 import enMessages from '../../../messages/en.json';
@@ -43,12 +44,18 @@ export default async function LocaleLayout({
 
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
+  const localBusinessSchema = generateLocalBusinessSchema();
+
   return (
     <html lang={locale}>
       <head>
         <GTMScript />
         <link rel="preconnect" href="https://assets.thedetailshopreno.com" />
         <link rel="dns-prefetch" href="https://assets.thedetailshopreno.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(localBusinessSchema)}}
+        />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

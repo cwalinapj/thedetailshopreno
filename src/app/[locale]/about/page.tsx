@@ -20,6 +20,7 @@ export default async function AboutPage({params}: {params: Promise<{locale: stri
   const locale: Locale = routing.locales.includes(requestedLocale as Locale) ? requestedLocale as Locale : routing.defaultLocale;
   setRequestLocale(locale);
   const t = await getTranslations({locale, namespace: 'about'});
+  const phone = getPhone(locale);
 
   return (
     <section className="about-page">
@@ -56,7 +57,7 @@ export default async function AboutPage({params}: {params: Promise<{locale: stri
           <h2>{t('ctaTitle')}</h2>
           <p>{t('ctaText')}</p>
           <div className="cta-buttons">
-            <a href={`tel:`} className="btn btn-primary">{t('callNow')}</a>
+            <a href={`tel:${phone.tel}`} className="btn btn-primary">{t('callNow')}</a>
             <Link href="https://supremexautodetail.fieldd.co/" target="_blank" rel="noopener" className="btn btn-white">{t('bookOnline')}</Link>
           </div>
         </div>

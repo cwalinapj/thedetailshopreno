@@ -1,4 +1,4 @@
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {routing} from '../../../../i18n/routing';
 import {generatePageMetadata} from '@/lib/seo';
 import Link from 'next/link';
@@ -22,19 +22,20 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
     : routing.defaultLocale;
 
   setRequestLocale(locale);
+  const t = await getTranslations({locale, namespace: 'contactPage'});
   const phone = getPhone(locale);
 
   return (
     <section className="contact-page">
       <div className="container">
         <header className="page-header">
-          <h1>Contact Us</h1>
-          <p>Reach out to us for a free quote</p>
+          <h1>{t('title')}</h1>
+          <p>{t('subtitle')}</p>
         </header>
 
         <div className="contact-grid">
           <div className="contact-info-section">
-            <h2>Get In Touch</h2>
+            <h2>{t('getInTouch')}</h2>
 
             <div className="contact-card">
               <div className="contact-item">
@@ -45,8 +46,8 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                   </svg>
                 </div>
                 <div className="contact-details">
-                  <h3>Address</h3>
-                  <p>1275 Dawson Dr. #B, Reno, NV 89523</p>
+                  <h3>{t('address')}</h3>
+                  <p>{t('addressValue')}</p>
                 </div>
               </div>
 
@@ -58,7 +59,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                   </svg>
                 </div>
                 <div className="contact-details">
-                  <h3>Email</h3>
+                  <h3>{t('email')}</h3>
                   <a href="mailto:alexis@supremexdetail.com">alexis@supremexdetail.com</a>
                 </div>
               </div>
@@ -70,7 +71,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                   </svg>
                 </div>
                 <div className="contact-details">
-                  <h3>Phone</h3>
+                  <h3>{t('phone')}</h3>
                   <a href={`tel:${phone.tel}`}>{phone.display}</a>
                 </div>
               </div>
@@ -83,8 +84,8 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                   </svg>
                 </div>
                 <div className="contact-details">
-                  <h3>Business Hours</h3>
-                  <p>Mon-Sat: 8AM - 6PM</p>
+                  <h3>{t('hours')}</h3>
+                  <p>{t('hoursValue')}</p>
                 </div>
               </div>
             </div>
@@ -95,29 +96,29 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
               rel="noopener"
               className="btn btn-primary btn-large btn-block"
             >
-              Book Now
+              {t('bookNow')}
             </Link>
           </div>
 
           <div className="contact-form-section">
-            <h2>Send a Message</h2>
+            <h2>{t('sendMessage')}</h2>
             <form className="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
               <div className="form-group">
-                <input type="text" name="name" placeholder="Name" required className="form-input" />
+                <input type="text" name="name" placeholder={t('formName')} required className="form-input" />
               </div>
               <div className="form-group">
-                <input type="email" name="email" placeholder="Email" required className="form-input" />
+                <input type="email" name="email" placeholder={t('formEmail')} required className="form-input" />
               </div>
               <div className="form-group">
-                <input type="tel" name="phone" placeholder="Phone Number" required className="form-input" />
+                <input type="tel" name="phone" placeholder={t('formPhone')} required className="form-input" />
               </div>
               <div className="form-group">
-                <input type="text" name="vehicle" placeholder="Year, Make & Model" className="form-input" />
+                <input type="text" name="vehicle" placeholder={t('formVehicle')} className="form-input" />
               </div>
               <div className="form-group">
-                <textarea name="message" placeholder="Message" rows={4} className="form-textarea"></textarea>
+                <textarea name="message" placeholder={t('formMessage')} rows={4} className="form-textarea"></textarea>
               </div>
-              <button type="submit" className="btn btn-primary btn-large btn-block">Submit</button>
+              <button type="submit" className="btn btn-primary btn-large btn-block">{t('submit')}</button>
             </form>
           </div>
         </div>

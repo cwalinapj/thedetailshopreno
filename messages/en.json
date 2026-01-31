@@ -626,6 +626,25 @@
       }
     }
   },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Reach out to us for a free quote",
+    "getInTouch": "Get In Touch",
+    "address": "Address",
+    "addressValue": "1275 Dawson Dr. #B, Reno, NV 89523",
+    "email": "Email",
+    "phone": "Phone",
+    "hours": "Business Hours",
+    "hoursValue": "Mon-Sat: 8AM - 6PM",
+    "bookNow": "Book Now",
+    "sendMessage": "Send a Message",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formPhone": "Phone Number",
+    "formVehicle": "Year, Make & Model",
+    "formMessage": "Message",
+    "submit": "Submit"
+  },
   "faqPage": {
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to common questions about our auto detailing services",

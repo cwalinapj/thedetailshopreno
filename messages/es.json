@@ -626,6 +626,25 @@
       }
     }
   },
+  "contactPage": {
+    "title": "Contáctanos",
+    "subtitle": "Comunícate con nosotros para una cotización gratis",
+    "getInTouch": "Ponte en Contacto",
+    "address": "Dirección",
+    "addressValue": "1275 Dawson Dr. #B, Reno, NV 89523",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "hours": "Horario de Atención",
+    "hoursValue": "Lun-Sáb: 8AM - 6PM",
+    "bookNow": "Reservar Ahora",
+    "sendMessage": "Enviar un Mensaje",
+    "formName": "Nombre",
+    "formEmail": "Correo Electrónico",
+    "formPhone": "Número de Teléfono",
+    "formVehicle": "Año, Marca y Modelo",
+    "formMessage": "Mensaje",
+    "submit": "Enviar"
+  },
   "faqPage": {
     "title": "Preguntas Frecuentes",
     "subtitle": "Encuentra respuestas a preguntas comunes sobre nuestros servicios de detallado automotriz",
