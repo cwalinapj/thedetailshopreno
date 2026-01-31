@@ -54,7 +54,7 @@ export default async function CeramicCoatingServicesPage({params}: {params: Prom
           <div className="ceramic-intro-grid">
             <div className="ceramic-intro-image">
               <Image
-                src="/images/ceramic-coating.jpg"
+                src="/images/envato/ppf-application-640w.jpg"
                 alt={t('introImageAlt')}
                 width={600}
                 height={400}

@@ -58,7 +58,7 @@ export default async function ExteriorServicesPage({params}: {params: Promise<{l
           <div className="exterior-intro-grid">
             <div className="exterior-intro-image">
               <Image
-                src="/images/exterior-detailing.jpg"
+                src="/images/envato/foam-wash-640w.jpg"
                 alt={t('introImageAlt')}
                 width={600}
                 height={400}

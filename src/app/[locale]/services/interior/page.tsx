@@ -58,7 +58,7 @@ export default async function InteriorServicesPage({params}: {params: Promise<{l
           <div className="interior-intro-grid">
             <div className="interior-intro-image">
               <Image
-                src="/images/interior-detailing.jpg"
+                src="/images/envato/interior-steering-640w.jpg"
                 alt={t('introImageAlt')}
                 width={600}
                 height={400}

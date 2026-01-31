@@ -1,0 +1,267 @@
+{
+  "generated": "2026-01-31T06:54:19.821Z",
+  "baseUrl": "https://assets.thedetailshopreno.com",
+  "images": {
+    "pressure-wash-hero": {
+      "sizes": {
+        "360": {
+          "webp": "pressure-wash-hero-360w.webp",
+          "jpg": "pressure-wash-hero-360w.jpg",
+          "avif": "pressure-wash-hero-360w.avif"
+        },
+        "640": {
+          "webp": "pressure-wash-hero-640w.webp",
+          "jpg": "pressure-wash-hero-640w.jpg",
+          "avif": "pressure-wash-hero-640w.avif"
+        },
+        "960": {
+          "webp": "pressure-wash-hero-960w.webp",
+          "jpg": "pressure-wash-hero-960w.jpg",
+          "avif": "pressure-wash-hero-960w.avif"
+        },
+        "1440": {
+          "webp": "pressure-wash-hero-1440w.webp",
+          "jpg": "pressure-wash-hero-1440w.jpg",
+          "avif": "pressure-wash-hero-1440w.avif"
+        },
+        "1920": {
+          "webp": "pressure-wash-hero-1920w.webp",
+          "jpg": "pressure-wash-hero-1920w.jpg",
+          "avif": "pressure-wash-hero-1920w.avif"
+        }
+      }
+    },
+    "ppf-application": {
+      "sizes": {
+        "360": {
+          "webp": "ppf-application-360w.webp",
+          "jpg": "ppf-application-360w.jpg",
+          "avif": "ppf-application-360w.avif"
+        },
+        "640": {
+          "webp": "ppf-application-640w.webp",
+          "jpg": "ppf-application-640w.jpg",
+          "avif": "ppf-application-640w.avif"
+        },
+        "960": {
+          "webp": "ppf-application-960w.webp",
+          "jpg": "ppf-application-960w.jpg",
+          "avif": "ppf-application-960w.avif"
+        },
+        "1440": {
+          "webp": "ppf-application-1440w.webp",
+          "jpg": "ppf-application-1440w.jpg",
+          "avif": "ppf-application-1440w.avif"
+        },
+        "1920": {
+          "webp": "ppf-application-1920w.webp",
+          "jpg": "ppf-application-1920w.jpg",
+          "avif": "ppf-application-1920w.avif"
+        }
+      }
+    },
+    "interior-steering": {
+      "sizes": {
+        "360": {
+          "webp": "interior-steering-360w.webp",
+          "jpg": "interior-steering-360w.jpg",
+          "avif": "interior-steering-360w.avif"
+        },
+        "640": {
+          "webp": "interior-steering-640w.webp",
+          "jpg": "interior-steering-640w.jpg",
+          "avif": "interior-steering-640w.avif"
+        },
+        "960": {
+          "webp": "interior-steering-960w.webp",
+          "jpg": "interior-steering-960w.jpg",
+          "avif": "interior-steering-960w.avif"
+        },
+        "1440": {
+          "webp": "interior-steering-1440w.webp",
+          "jpg": "interior-steering-1440w.jpg",
+          "avif": "interior-steering-1440w.avif"
+        },
+        "1920": {
+          "webp": "interior-steering-1920w.webp",
+          "jpg": "interior-steering-1920w.jpg",
+          "avif": "interior-steering-1920w.avif"
+        }
+      }
+    },
+    "interior-brush": {
+      "sizes": {
+        "360": {
+          "webp": "interior-brush-360w.webp",
+          "jpg": "interior-brush-360w.jpg",
+          "avif": "interior-brush-360w.avif"
+        },
+        "640": {
+          "webp": "interior-brush-640w.webp",
+          "jpg": "interior-brush-640w.jpg",
+          "avif": "interior-brush-640w.avif"
+        },
+        "960": {
+          "webp": "interior-brush-960w.webp",
+          "jpg": "interior-brush-960w.jpg",
+          "avif": "interior-brush-960w.avif"
+        },
+        "1440": {
+          "webp": "interior-brush-1440w.webp",
+          "jpg": "interior-brush-1440w.jpg",
+          "avif": "interior-brush-1440w.avif"
+        },
+        "1920": {
+          "webp": "interior-brush-1920w.webp",
+          "jpg": "interior-brush-1920w.jpg",
+          "avif": "interior-brush-1920w.avif"
+        }
+      }
+    },
+    "grille-detail": {
+      "sizes": {
+        "360": {
+          "webp": "grille-detail-360w.webp",
+          "jpg": "grille-detail-360w.jpg",
+          "avif": "grille-detail-360w.avif"
+        },
+        "640": {
+          "webp": "grille-detail-640w.webp",
+          "jpg": "grille-detail-640w.jpg",
+          "avif": "grille-detail-640w.avif"
+        },
+        "960": {
+          "webp": "grille-detail-960w.webp",
+          "jpg": "grille-detail-960w.jpg",
+          "avif": "grille-detail-960w.avif"
+        },
+        "1440": {
+          "webp": "grille-detail-1440w.webp",
+          "jpg": "grille-detail-1440w.jpg",
+          "avif": "grille-detail-1440w.avif"
+        },
+        "1920": {
+          "webp": "grille-detail-1920w.webp",
+          "jpg": "grille-detail-1920w.jpg",
+          "avif": "grille-detail-1920w.avif"
+        }
+      }
+    },
+    "foam-wash": {
+      "sizes": {
+        "360": {
+          "webp": "foam-wash-360w.webp",
+          "jpg": "foam-wash-360w.jpg",
+          "avif": "foam-wash-360w.avif"
+        },
+        "640": {
+          "webp": "foam-wash-640w.webp",
+          "jpg": "foam-wash-640w.jpg",
+          "avif": "foam-wash-640w.avif"
+        },
+        "960": {
+          "webp": "foam-wash-960w.webp",
+          "jpg": "foam-wash-960w.jpg",
+          "avif": "foam-wash-960w.avif"
+        },
+        "1440": {
+          "webp": "foam-wash-1440w.webp",
+          "jpg": "foam-wash-1440w.jpg",
+          "avif": "foam-wash-1440w.avif"
+        },
+        "1920": {
+          "webp": "foam-wash-1920w.webp",
+          "jpg": "foam-wash-1920w.jpg",
+          "avif": "foam-wash-1920w.avif"
+        }
+      }
+    },
+    "exterior-wipe": {
+      "sizes": {
+        "360": {
+          "webp": "exterior-wipe-360w.webp",
+          "jpg": "exterior-wipe-360w.jpg",
+          "avif": "exterior-wipe-360w.avif"
+        },
+        "640": {
+          "webp": "exterior-wipe-640w.webp",
+          "jpg": "exterior-wipe-640w.jpg",
+          "avif": "exterior-wipe-640w.avif"
+        },
+        "960": {
+          "webp": "exterior-wipe-960w.webp",
+          "jpg": "exterior-wipe-960w.jpg",
+          "avif": "exterior-wipe-960w.avif"
+        },
+        "1440": {
+          "webp": "exterior-wipe-1440w.webp",
+          "jpg": "exterior-wipe-1440w.jpg",
+          "avif": "exterior-wipe-1440w.avif"
+        },
+        "1920": {
+          "webp": "exterior-wipe-1920w.webp",
+          "jpg": "exterior-wipe-1920w.jpg",
+          "avif": "exterior-wipe-1920w.avif"
+        }
+      }
+    },
+    "exterior-polish": {
+      "sizes": {
+        "360": {
+          "webp": "exterior-polish-360w.webp",
+          "jpg": "exterior-polish-360w.jpg",
+          "avif": "exterior-polish-360w.avif"
+        },
+        "640": {
+          "webp": "exterior-polish-640w.webp",
+          "jpg": "exterior-polish-640w.jpg",
+          "avif": "exterior-polish-640w.avif"
+        },
+        "960": {
+          "webp": "exterior-polish-960w.webp",
+          "jpg": "exterior-polish-960w.jpg",
+          "avif": "exterior-polish-960w.avif"
+        },
+        "1440": {
+          "webp": "exterior-polish-1440w.webp",
+          "jpg": "exterior-polish-1440w.jpg",
+          "avif": "exterior-polish-1440w.avif"
+        },
+        "1920": {
+          "webp": "exterior-polish-1920w.webp",
+          "jpg": "exterior-polish-1920w.jpg",
+          "avif": "exterior-polish-1920w.avif"
+        }
+      }
+    },
+    "detail-brush-closeup": {
+      "sizes": {
+        "360": {
+          "webp": "detail-brush-closeup-360w.webp",
+          "jpg": "detail-brush-closeup-360w.jpg",
+          "avif": "detail-brush-closeup-360w.avif"
+        },
+        "640": {
+          "webp": "detail-brush-closeup-640w.webp",
+          "jpg": "detail-brush-closeup-640w.jpg",
+          "avif": "detail-brush-closeup-640w.avif"
+        },
+        "960": {
+          "webp": "detail-brush-closeup-960w.webp",
+          "jpg": "detail-brush-closeup-960w.jpg",
+          "avif": "detail-brush-closeup-960w.avif"
+        },
+        "1440": {
+          "webp": "detail-brush-closeup-1440w.webp",
+          "jpg": "detail-brush-closeup-1440w.jpg",
+          "avif": "detail-brush-closeup-1440w.avif"
+        },
+        "1920": {
+          "webp": "detail-brush-closeup-1920w.webp",
+          "jpg": "detail-brush-closeup-1920w.jpg",
+          "avif": "detail-brush-closeup-1920w.avif"
+        }
+      }
+    }
+  }
+}

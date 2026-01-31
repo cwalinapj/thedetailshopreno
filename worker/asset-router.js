@@ -4,6 +4,7 @@
  * Routes image requests to Backblaze B2 with:
  * - Format negotiation (AVIF > WebP > JPG)
  * - Size selection based on viewport
+ * - On-the-fly image resizing via Cloudflare Image Resizing
  * - CDN caching headers
  * - Clean URL structure
  */
@@ -24,6 +25,13 @@ const AVAILABLE_SIZES = [360, 640, 960, 1440, 1920];
 
 // Available formats in preference order
 const FORMAT_PREFERENCE = ['avif', 'webp', 'jpg'];
+
+// Quality settings for on-the-fly resizing
+const QUALITY_CONFIG = {
+  avif: 65,
+  webp: 80,
+  jpg: 85,
+};
 
 /**
  * Determine best format based on Accept header
@@ -61,6 +69,63 @@ function getBestSize(url, viewportWidth) {
 
   // Default to medium size
   return 960;
+}
+
+/**
+ * Try on-the-fly image resizing using Cloudflare Image Resizing
+ * This is used when pre-generated variants don't exist
+ */
+async function tryOnTheFlyResize(request, imagePath, targetFormat) {
+  // Extract base image path and requested size
+  const match = imagePath.match(/^(.+)-(\d+)w\.(avif|webp|jpe?g)$/i);
+  if (!match) return null;
+
+  const [, basePath, sizeStr] = match;
+  const width = parseInt(sizeStr);
+
+  // Find the original/source image (try common extensions)
+  const sourceExtensions = ['jpg', 'jpeg', 'png', 'webp'];
+  let sourceUrl = null;
+
+  for (const ext of sourceExtensions) {
+    const testUrl = `${B2_BUCKET_URL}/${basePath}.${ext}`;
+    const testResponse = await fetch(testUrl, {method: 'HEAD'});
+    if (testResponse.ok) {
+      sourceUrl = testUrl;
+      break;
+    }
+  }
+
+  if (!sourceUrl) return null;
+
+  // Use Cloudflare Image Resizing
+  const imageOptions = {
+    width,
+    fit: 'cover',
+    format: targetFormat === 'jpg' ? 'jpeg' : targetFormat,
+    quality: QUALITY_CONFIG[targetFormat] || 80,
+  };
+
+  try {
+    const resizedResponse = await fetch(sourceUrl, {
+      cf: {
+        image: imageOptions,
+        cacheTtl: CACHE_CONFIG.images.edgeTTL,
+        cacheEverything: true,
+      },
+    });
+
+    if (resizedResponse.ok) {
+      const contentType = targetFormat === 'avif' ? 'image/avif' :
+                         targetFormat === 'webp' ? 'image/webp' : 'image/jpeg';
+      return addCacheHeaders(resizedResponse, contentType);
+    }
+  } catch (e) {
+    // Image resizing not available or failed, continue to fallback
+    console.log('Image resizing failed:', e.message);
+  }
+
+  return null;
 }
 
 /**
@@ -117,7 +182,13 @@ async function handleImageRequest(request, url) {
   });
 
   if (!response.ok) {
-    // Fallback to original format/size if optimized version not found
+    // Try on-the-fly resizing via Cloudflare Image Resizing
+    const resizeResult = await tryOnTheFlyResize(request, imagePath, format);
+    if (resizeResult) {
+      return resizeResult;
+    }
+
+    // Final fallback to original file
     const fallbackUrl = `${B2_BUCKET_URL}/${imagePath}`;
     const fallbackResponse = await fetch(fallbackUrl);
 
