@@ -13,8 +13,8 @@ export default function Hero() {
     trackFielddBooking('hero_cta_click');
   };
 
-  // Hero background image from B2 CDN
-  const heroImage = `${CDN_URL}/images/2024/10/background_home_08`;
+  // Hero background image - pressure wash silhouette from Envato
+  const heroImage = `/images/envato/pressure-wash-hero`;
 
   return (
     <section className="hero">
