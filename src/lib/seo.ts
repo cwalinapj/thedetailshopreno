@@ -29,108 +29,108 @@ const pagePathMap: Record<string, string> = {
 const pageMetadata: Record<string, Record<string, {title: string; description: string; keywords: string[]}>> = {
   home: {
     en: {
-      title: 'Auto Detailing Reno NV | Mobile Car Detailing | Supreme X Detailing',
+      title: 'Auto Detailing Reno NV | Mobile Car Detailing | Car Detailing Reno',
       description: '#1 rated mobile auto detailing in Reno & Sparks, Nevada. Professional ceramic coating, paint correction, interior & exterior detailing. 5-star reviews. Call (775) 750-2920 for free quote!',
       keywords: ['auto detailing reno', 'car detailing reno nv', 'mobile detailing sparks', 'ceramic coating reno'],
     },
     es: {
-      title: 'Detallado de Autos Reno NV | Servicio Móvil | Supreme X Detailing',
+      title: 'Detallado de Autos Reno NV | Servicio Móvil | Car Detailing Reno',
       description: 'El mejor servicio de detallado de carros en Reno y Sparks, Nevada. Recubrimiento cerámico, corrección de pintura, limpieza interior y exterior. Hablamos español. Llame al (775) 440-5342.',
       keywords: ['detallado de autos reno', 'lavado de carros reno', 'ceramic coating español', 'detailing en español'],
     },
   },
   services: {
     en: {
-      title: 'Car Detailing Services Reno NV | Full Service Auto Detail | Supreme X',
+      title: 'Car Detailing Services Reno NV | Full Service Auto Detail | Car Detailing Reno',
       description: 'Complete auto detailing services in Reno, Nevada. Interior cleaning, exterior wash & wax, ceramic coating, paint correction, headlight restoration. Prices from $150. Book online!',
       keywords: ['car detailing services reno', 'auto detail reno nv', 'full detail service', 'car wash reno'],
     },
     es: {
-      title: 'Servicios de Detallado de Carros Reno NV | Supreme X Detailing',
+      title: 'Servicios de Detallado de Carros Reno NV | Car Detailing Reno',
       description: 'Servicios completos de detallado de autos en Reno, Nevada. Limpieza interior, lavado exterior, encerado, ceramic coating, corrección de pintura. Precios desde $150. ¡Agende hoy!',
       keywords: ['servicios detallado carros', 'lavado de autos reno', 'limpieza de carros', 'detallado completo'],
     },
   },
   interiorServices: {
     en: {
-      title: 'Interior Car Detailing Reno NV | Deep Clean & Sanitize | Supreme X',
+      title: 'Interior Car Detailing Reno NV | Deep Clean & Sanitize | Car Detailing Reno',
       description: 'Professional interior car detailing in Reno, NV. Steam cleaning, leather conditioning, carpet shampoo, odor removal, stain extraction. Kid & pet friendly products. From $99!',
       keywords: ['interior car detailing reno', 'car interior cleaning', 'leather conditioning', 'carpet shampoo car'],
     },
     es: {
-      title: 'Limpieza Interior de Carros Reno NV | Detallado Profundo | Supreme X',
+      title: 'Limpieza Interior de Carros Reno NV | Detallado Profundo | Car Detailing Reno',
       description: 'Limpieza interior profesional de autos en Reno, NV. Lavado de vestiduras, acondicionador de piel, shampoo de alfombras, eliminación de olores y manchas. Productos seguros. Desde $99.',
       keywords: ['limpieza interior carros', 'lavado de vestiduras', 'detallado interior', 'shampoo de alfombras'],
     },
   },
   exteriorServices: {
     en: {
-      title: 'Exterior Car Detailing Reno NV | Hand Wash & Polish | Supreme X',
+      title: 'Exterior Car Detailing Reno NV | Hand Wash & Polish | Car Detailing Reno',
       description: 'Premium exterior car detailing in Reno, Nevada. Hand wash, clay bar treatment, machine polish, carnauba wax, tire shine, wheel cleaning. Showroom finish guaranteed!',
       keywords: ['exterior car detailing reno', 'hand car wash reno', 'car polish', 'clay bar treatment'],
     },
     es: {
-      title: 'Detallado Exterior de Carros Reno NV | Lavado a Mano | Supreme X',
+      title: 'Detallado Exterior de Carros Reno NV | Lavado a Mano | Car Detailing Reno',
       description: 'Detallado exterior premium de autos en Reno, Nevada. Lavado a mano, clay bar, pulido con máquina, encerado, brillo de llantas. ¡Garantizamos acabado de agencia!',
       keywords: ['detallado exterior carros', 'lavado a mano autos', 'pulido de carros', 'encerado profesional'],
     },
   },
   ceramicCoatingServices: {
     en: {
-      title: 'Ceramic Coating Reno NV | Paint Protection | Supreme X Detailing',
+      title: 'Ceramic Coating Reno NV | Paint Protection | Car Detailing Reno',
       description: 'Professional ceramic coating in Reno, Nevada. 2-5 year protection, hydrophobic finish, scratch resistance, UV protection. Bronze $599, Silver $999, Gold $1499. Free consultation!',
       keywords: ['ceramic coating reno', 'paint protection film', 'car coating reno nv', 'nano ceramic coating'],
     },
     es: {
-      title: 'Ceramic Coating Reno NV | Protección de Pintura | Supreme X Detailing',
+      title: 'Ceramic Coating Reno NV | Protección de Pintura | Car Detailing Reno',
       description: 'Ceramic coating profesional en Reno, Nevada. Protección de 2-5 años, acabado hidrofóbico, resistente a rayones, protección UV. Bronce $599, Plata $999, Oro $1499. ¡Consulta gratis!',
       keywords: ['ceramic coating reno', 'protección de pintura', 'recubrimiento cerámico', 'nano coating'],
     },
   },
   portfolio: {
     en: {
-      title: 'Auto Detailing Portfolio | Before & After Photos | Supreme X Reno',
+      title: 'Auto Detailing Portfolio | Before & After Photos | Car Detailing Reno',
       description: 'See our auto detailing results in Reno, NV. Before and after photos of ceramic coating, paint correction, interior restoration. Real customer vehicles, real transformations!',
       keywords: ['auto detailing before after', 'car detail photos', 'detailing portfolio', 'ceramic coating results'],
     },
     es: {
-      title: 'Portafolio de Detallado | Fotos Antes y Después | Supreme X Reno',
+      title: 'Portafolio de Detallado | Fotos Antes y Después | Car Detailing Reno',
       description: 'Vea nuestros resultados de detallado de autos en Reno, NV. Fotos de antes y después de ceramic coating, corrección de pintura, restauración interior. ¡Transformaciones reales!',
       keywords: ['fotos antes después', 'resultados detallado', 'portafolio carros', 'transformación autos'],
     },
   },
   about: {
     en: {
-      title: 'About Supreme X Detailing | Reno\'s Trusted Auto Detailers Since 2018',
-      description: 'Meet Supreme X Detailing - Reno\'s top-rated mobile auto detailing team. Certified detailers, eco-friendly products, 100% satisfaction guarantee. Serving Reno, Sparks & Northern Nevada.',
+      title: 'About Car Detailing Reno | Reno\'s Trusted Auto Detailers Since 2018',
+      description: 'Meet Car Detailing Reno - Reno\'s top-rated mobile auto detailing team. Certified detailers, eco-friendly products, 100% satisfaction guarantee. Serving Reno, Sparks & Northern Nevada.',
       keywords: ['about supreme x detailing', 'reno auto detailers', 'mobile detailing team', 'certified detailers'],
     },
     es: {
-      title: 'Sobre Supreme X Detailing | Detalladores de Confianza en Reno',
-      description: 'Conozca a Supreme X Detailing - el equipo de detallado móvil mejor calificado de Reno. Detalladores certificados, productos ecológicos, garantía de satisfacción. Servicio en español.',
+      title: 'Sobre Car Detailing Reno | Detalladores de Confianza en Reno',
+      description: 'Conozca a Car Detailing Reno - el equipo de detallado móvil mejor calificado de Reno. Detalladores certificados, productos ecológicos, garantía de satisfacción. Servicio en español.',
       keywords: ['sobre supreme x', 'detalladores reno', 'servicio en español', 'detallado móvil'],
     },
   },
   contact: {
     en: {
-      title: 'Contact Us | Get a Free Quote | Supreme X Detailing Reno',
-      description: 'Contact Supreme X Detailing for a free auto detailing quote. Call (775) 750-2920, text, or book online. Same-day appointments in Reno & Sparks, NV. We come to you!',
+      title: 'Contact Us | Get a Free Quote | Car Detailing Reno',
+      description: 'Contact Car Detailing Reno for a free auto detailing quote. Call (775) 750-2920, text, or book online. Same-day appointments in Reno & Sparks, NV. We come to you!',
       keywords: ['contact supreme x detailing', 'auto detailing quote', 'book car detail', 'reno detailing appointment'],
     },
     es: {
-      title: 'Contáctenos | Cotización Gratis | Supreme X Detailing Reno',
-      description: 'Contacte a Supreme X Detailing para cotización gratis. Llame al (775) 440-5342, mande texto, o reserve en línea. Citas el mismo día en Reno y Sparks. ¡Vamos a donde usted esté!',
+      title: 'Contáctenos | Cotización Gratis | Car Detailing Reno',
+      description: 'Contacte a Car Detailing Reno para cotización gratis. Llame al (775) 440-5342, mande texto, o reserve en línea. Citas el mismo día en Reno y Sparks. ¡Vamos a donde usted esté!',
       keywords: ['contacto supreme x', 'cotización detallado', 'agendar cita', 'detallado en español'],
     },
   },
   faq: {
     en: {
-      title: 'Auto Detailing FAQ | Common Questions | Supreme X Detailing Reno',
-      description: 'Frequently asked questions about auto detailing in Reno, NV. Learn about ceramic coating, paint correction, pricing, and what to expect. Expert answers from Supreme X Detailing.',
+      title: 'Auto Detailing FAQ | Common Questions | Car Detailing Reno',
+      description: 'Frequently asked questions about auto detailing in Reno, NV. Learn about ceramic coating, paint correction, pricing, and what to expect. Expert answers from Car Detailing Reno.',
       keywords: ['auto detailing faq', 'car detailing questions', 'ceramic coating faq', 'detailing prices reno'],
     },
     es: {
-      title: 'Preguntas Frecuentes | Detallado de Autos | Supreme X Detailing Reno',
+      title: 'Preguntas Frecuentes | Detallado de Autos | Car Detailing Reno',
       description: 'Preguntas frecuentes sobre detallado de autos en Reno, NV. Información sobre ceramic coating, corrección de pintura, precios, y qué esperar. Respuestas de expertos en español.',
       keywords: ['preguntas frecuentes detallado', 'dudas ceramic coating', 'precios detallado', 'información en español'],
     },
@@ -175,9 +175,9 @@ export function generatePageMetadata({
     title,
     description,
     keywords: keywords.join(', '),
-    authors: [{ name: 'Supreme X Detailing' }],
-    creator: 'Supreme X Detailing',
-    publisher: 'Supreme X Detailing',
+    authors: [{ name: 'Car Detailing Reno' }],
+    creator: 'Car Detailing Reno',
+    publisher: 'Car Detailing Reno',
     alternates: {
       canonical: canonicalUrl,
       languages,
@@ -186,7 +186,7 @@ export function generatePageMetadata({
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Supreme X Detailing',
+      siteName: 'Car Detailing Reno',
       // Use regional locale for OpenGraph
       locale: locale === 'es' ? 'es_MX' : 'en_US',
       alternateLocale: locale === 'es' ? 'en_US' : 'es_MX',
@@ -236,7 +236,7 @@ export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'AutoRepair',
-    name: 'Supreme X Detailing',
+    name: 'Car Detailing Reno',
     alternateName: 'The Detail Shop Reno',
     description: 'Professional mobile auto detailing services in Reno and Sparks, Nevada. Ceramic coating, paint correction, interior and exterior detailing.',
     url: SITE_URL,

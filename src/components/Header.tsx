@@ -48,7 +48,7 @@ export default function Header() {
             />
             <img
               src={`${logoImage}-640w.jpg`}
-              alt="Supreme X Auto Detailing"
+              alt="Car Detailing Reno Auto Detailing"
               className="logo-image"
               width="180"
               height="76"
