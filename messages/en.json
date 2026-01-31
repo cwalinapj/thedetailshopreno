@@ -12,6 +12,7 @@
     "home": "Home",
     "services": "Services",
     "portfolio": "Portfolio",
+    "testimonials": "Reviews",
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ",
@@ -562,6 +563,66 @@
           "CARFAX Registration",
           "Annual Inspection Included"
         ]
+      }
+    }
+  },
+  "testimonialsPage": {
+    "title": "Customer Reviews & Testimonials",
+    "subtitle": "See what Reno drivers are saying about our professional auto detailing services",
+    "happyCustomers": "Happy Customers",
+    "googleRating": "Google Rating",
+    "yearsExperience": "Years Experience",
+    "verified": "Verified Customer",
+    "serviceUsed": "Service",
+    "serviceLinks": {
+      "ceramicCoating": "Ceramic Coating",
+      "interior": "Interior Detailing",
+      "exterior": "Exterior Detailing",
+      "fullDetail": "Full Detail Package"
+    },
+    "whyCustomersChoose": "Why Reno Drivers Choose Us",
+    "seoContent": {
+      "intro": "Our customers consistently praise our attention to detail and professional results. Many choose our",
+      "ceramicMention": " for long-lasting paint protection. Others love our thorough",
+      "interiorMention": " that leaves their car smelling fresh and looking brand new. And our",
+      "exteriorMention": " brings back that showroom shine every time."
+    },
+    "leaveReview": "Had a Great Experience?",
+    "leaveReviewSubtitle": "We'd love to hear about it! Your feedback helps other Reno drivers find quality detailing.",
+    "writeReview": "Write a Google Review",
+    "ctaTitle": "Ready to Experience the Difference?",
+    "ctaSubtitle": "Join hundreds of satisfied customers in Reno and Sparks",
+    "contactUs": "Contact Us",
+    "reviews": {
+      "1": {
+        "quote": "Best detail I've ever had! My car looks brand new. The attention to detail is incredible - they even got into all the little crevices I didn't know existed. Highly recommend their full detail package!",
+        "name": "Michael R.",
+        "location": "Reno, NV"
+      },
+      "2": {
+        "quote": "Had the ceramic coating done and wow! Water just beads right off. The team was professional, on time, and the results speak for themselves. My paint has never looked this good. Worth every penny for the protection.",
+        "name": "Sarah T.",
+        "location": "Sparks, NV"
+      },
+      "3": {
+        "quote": "They came to my office and detailed my truck's interior while I worked. So convenient! The interior looks and smells amazing - got out stains I thought were permanent. Already booked my next appointment.",
+        "name": "David L.",
+        "location": "Spanish Springs, NV"
+      },
+      "4": {
+        "quote": "The exterior detail exceeded my expectations. My 10-year-old car looks like it just rolled off the lot. The paint correction removed years of swirl marks. These guys know what they're doing!",
+        "name": "Jennifer M.",
+        "location": "Reno, NV"
+      },
+      "5": {
+        "quote": "Got the Gold ceramic coating package before winter. Best decision ever! Snow and mud just slide right off. The 10-year warranty gives me peace of mind. Professional service from start to finish.",
+        "name": "Robert K.",
+        "location": "Sun Valley, NV"
+      },
+      "6": {
+        "quote": "My kids destroyed the backseat with snacks and spills. The interior detailing team worked miracles! You'd never know it was the same car. They were patient and thorough. 5 stars!",
+        "name": "Amanda S.",
+        "location": "Sparks, NV"
       }
     }
   },

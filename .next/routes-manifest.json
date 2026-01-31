@@ -106,6 +106,14 @@
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/interior(?:/)?$"
+    },
+    {
+      "page": "/[locale]/testimonials",
+      "regex": "^/([^/]+?)/testimonials(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/testimonials(?:/)?$"
     }
   ],
   "staticRoutes": [

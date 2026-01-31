@@ -18,6 +18,7 @@ const pagePathMap: Record<string, string> = {
   about: 'about',
   contact: 'contact',
   faq: 'faq',
+  testimonials: 'testimonials',
   interiorServices: 'services/interior',
   exteriorServices: 'services/exterior',
   ceramicCoatingServices: 'services/ceramic-coating',
@@ -133,6 +134,18 @@ const pageMetadata: Record<string, Record<string, {title: string; description: s
       title: 'Preguntas Frecuentes | Detallado de Autos | Car Detailing Reno',
       description: 'Preguntas frecuentes sobre detallado de autos en Reno, NV. Información sobre ceramic coating, corrección de pintura, precios, y qué esperar. Respuestas de expertos en español.',
       keywords: ['preguntas frecuentes detallado', 'dudas ceramic coating', 'precios detallado', 'información en español'],
+    },
+  },
+  testimonials: {
+    en: {
+      title: 'Customer Reviews & Testimonials | 5-Star Ratings | Car Detailing Reno',
+      description: 'Read verified customer reviews of Car Detailing Reno. 5-star Google ratings for ceramic coating, interior detailing, and exterior services in Reno & Sparks, NV. See why we\'re #1!',
+      keywords: ['car detailing reviews reno', 'auto detail testimonials', 'ceramic coating reviews', 'best detailer reno'],
+    },
+    es: {
+      title: 'Reseñas de Clientes | Testimonios | Car Detailing Reno',
+      description: 'Lea reseñas verificadas de clientes de Car Detailing Reno. Calificación de 5 estrellas en Google por ceramic coating, detallado interior y exterior en Reno y Sparks. ¡Vea por qué somos #1!',
+      keywords: ['reseñas detallado reno', 'testimonios auto detail', 'opiniones ceramic coating', 'mejor detallado reno'],
     },
   },
 };

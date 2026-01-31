@@ -12,6 +12,7 @@
     "home": "Inicio",
     "services": "Servicios",
     "portfolio": "Portafolio",
+    "testimonials": "Reseñas",
     "about": "Nosotros",
     "contact": "Contacto",
     "faq": "Preguntas",
@@ -562,6 +563,66 @@
           "Registro en CARFAX",
           "Inspección Anual Incluida"
         ]
+      }
+    }
+  },
+  "testimonialsPage": {
+    "title": "Reseñas y Testimonios de Clientes",
+    "subtitle": "Mira lo que dicen los conductores de Reno sobre nuestros servicios de detallado profesional",
+    "happyCustomers": "Clientes Felices",
+    "googleRating": "Calificación Google",
+    "yearsExperience": "Años de Experiencia",
+    "verified": "Cliente Verificado",
+    "serviceUsed": "Servicio",
+    "serviceLinks": {
+      "ceramicCoating": "Recubrimiento Cerámico",
+      "interior": "Detallado Interior",
+      "exterior": "Detallado Exterior",
+      "fullDetail": "Paquete Detallado Completo"
+    },
+    "whyCustomersChoose": "Por Qué los Conductores de Reno Nos Eligen",
+    "seoContent": {
+      "intro": "Nuestros clientes constantemente elogian nuestra atención al detalle y resultados profesionales. Muchos eligen nuestro",
+      "ceramicMention": " para protección duradera de pintura. Otros aman nuestro minucioso",
+      "interiorMention": " que deja su carro con olor fresco y luciendo como nuevo. Y nuestro",
+      "exteriorMention": " devuelve ese brillo de exhibición cada vez."
+    },
+    "leaveReview": "¿Tuviste una Gran Experiencia?",
+    "leaveReviewSubtitle": "¡Nos encantaría escucharlo! Tu opinión ayuda a otros conductores de Reno a encontrar detallado de calidad.",
+    "writeReview": "Escribe una Reseña en Google",
+    "ctaTitle": "¿Listo para Experimentar la Diferencia?",
+    "ctaSubtitle": "Únete a cientos de clientes satisfechos en Reno y Sparks",
+    "contactUs": "Contáctanos",
+    "reviews": {
+      "1": {
+        "quote": "¡El mejor detallado que he tenido! Mi carro se ve como nuevo. La atención al detalle es increíble - hasta limpiaron todos los rinconcitos que no sabía que existían. ¡Recomiendo mucho su paquete de detallado completo!",
+        "name": "Miguel R.",
+        "location": "Reno, NV"
+      },
+      "2": {
+        "quote": "Me hicieron el recubrimiento cerámico y ¡wow! El agua se resbala de inmediato. El equipo fue profesional, puntual, y los resultados hablan por sí solos. Mi pintura nunca se había visto tan bien. Vale cada centavo por la protección.",
+        "name": "Sandra T.",
+        "location": "Sparks, NV"
+      },
+      "3": {
+        "quote": "Vinieron a mi oficina y detallaron el interior de mi troca mientras trabajaba. ¡Muy conveniente! El interior se ve y huele increíble - quitaron manchas que pensé eran permanentes. Ya reservé mi próxima cita.",
+        "name": "Daniel L.",
+        "location": "Spanish Springs, NV"
+      },
+      "4": {
+        "quote": "El detallado exterior superó mis expectativas. Mi carro de 10 años se ve como recién salido de la agencia. La corrección de pintura eliminó años de marcas. ¡Estos tipos saben lo que hacen!",
+        "name": "Jennifer M.",
+        "location": "Reno, NV"
+      },
+      "5": {
+        "quote": "Obtuve el paquete Gold de ceramic coating antes del invierno. ¡La mejor decisión! La nieve y el lodo se resbalan fácil. La garantía de 10 años me da tranquilidad. Servicio profesional de principio a fin.",
+        "name": "Roberto K.",
+        "location": "Sun Valley, NV"
+      },
+      "6": {
+        "quote": "Mis hijos destruyeron el asiento trasero con comida y derrames. ¡El equipo de detallado interior hizo milagros! Nunca sabrías que es el mismo carro. Fueron pacientes y minuciosos. ¡5 estrellas!",
+        "name": "Amanda S.",
+        "location": "Sparks, NV"
       }
     }
   },
