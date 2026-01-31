@@ -1,18 +1,20 @@
 'use client';
 
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 import {trackEvent} from '@/lib/analytics';
+import {getPhone} from '@/lib/phone';
 
 interface ClickToCallProps {
   variant?: 'header' | 'hero' | 'footer' | 'mobile-sticky' | 'topbar';
   className?: string;
 }
 
-const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || '+17754405342';
-const PHONE_DISPLAY = '(775) 440-5342';
-
 export default function ClickToCall({variant = 'header', className = ''}: ClickToCallProps) {
   const t = useTranslations('cta');
+  const locale = useLocale();
+  const phone = getPhone(locale);
+  const PHONE_NUMBER = phone.tel;
+  const PHONE_DISPLAY = phone.display;
 
   const handleClick = () => {
     // Track click-to-call event in GTM/GA4
