@@ -87,17 +87,6 @@ export default function InstagramGallery({
             </div>
           ))}
         </div>
-        <p className="instagram-cta">
-          Follow us on{' '}
-          <a
-            href="https://www.instagram.com/supremexdetail/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>{' '}
-          for more!
-        </p>
       </div>
     );
   }
@@ -106,14 +95,9 @@ export default function InstagramGallery({
     <div className={`instagram-gallery ${className}`}>
       <div className="gallery-grid">
         {posts.map((post) => (
-          <a
+          <div
             key={post.id}
-            href={post.permalink}
-            target="_blank"
-            rel="noopener noreferrer"
             className="gallery-item"
-            data-gtm-action="instagram_click"
-            data-gtm-label={post.id}
           >
             <Image
               src={post.media_type === 'VIDEO' ? post.thumbnail_url || post.media_url : post.media_url}
@@ -128,19 +112,9 @@ export default function InstagramGallery({
                 <PlayIcon />
               </div>
             )}
-          </a>
+          </div>
         ))}
       </div>
-      <p className="instagram-cta">
-        Follow us on{' '}
-        <a
-          href="https://www.instagram.com/supremexdetail/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @supremexdetail
-        </a>
-      </p>
     </div>
   );
 }

@@ -46,7 +46,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
                 </div>
                 <div className="contact-details">
                   <h3>Address</h3>
-                  <p>1285 Old Barn Rd, Sparks, NV 89436</p>
+                  <p>1275 Dawson Dr. #B, Reno, NV 89523</p>
                 </div>
               </div>
 

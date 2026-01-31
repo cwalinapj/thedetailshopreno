@@ -207,7 +207,7 @@ export function generatePageMetadata({
       title,
       description,
       images: [`${SITE_URL}/images/envato/pressure-wash-hero-1440w.jpg`],
-      creator: '@supremexdetail',
+      creator: '@cardetailingreno',
     },
     robots: {
       index: true,
@@ -244,21 +244,23 @@ export function generateLocalBusinessSchema() {
     email: 'alexis@supremexdetail.com',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '1275 Dawson Dr. #B',
       addressLocality: 'Reno',
       addressRegion: 'NV',
+      postalCode: '89523',
       addressCountry: 'US',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 39.5296,
-      longitude: -119.8138,
+      latitude: 39.5097,
+      longitude: -119.8483,
     },
     areaServed: {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',
-        latitude: 39.5296,
-        longitude: -119.8138,
+        latitude: 39.5097,
+        longitude: -119.8483,
       },
       geoRadius: '50000',
     },
@@ -272,10 +274,7 @@ export function generateLocalBusinessSchema() {
     ],
     priceRange: '$$',
     image: `${SITE_URL}/images/envato/pressure-wash-hero-1440w.jpg`,
-    sameAs: [
-      'https://www.instagram.com/supremexdetail/',
-      'https://www.facebook.com/supremexdetailing/',
-    ],
+    sameAs: [],
     availableLanguage: ['English', 'Spanish'],
   };
 }
