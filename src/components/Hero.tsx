@@ -4,8 +4,6 @@ import {useTranslations} from 'next-intl';
 import Link from 'next/link';
 import {trackFielddBooking} from '@/lib/analytics';
 
-const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://assets.thedetailshopreno.com';
-
 export default function Hero() {
   const t = useTranslations('hero');
 

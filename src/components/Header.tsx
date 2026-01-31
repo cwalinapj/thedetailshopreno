@@ -7,15 +7,13 @@ import {usePathname} from 'next/navigation';
 import ClickToCall from './ClickToCall';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://assets.thedetailshopreno.com';
-
 export default function Header() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const logoImage = `${CDN_URL}/images/2024/09/CARDETAILINGRENOSPARKS`;
+  const logoImage = `/images/2024/09/CARDETAILINGRENOSPARKS`;
 
   const navItems = [
     {href: '/', label: t('home')},

@@ -6,34 +6,16 @@ import Link from 'next/link';
 
 type TabKey = 'fullDetail' | 'interior' | 'exterior';
 
-const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://assets.thedetailshopreno.com';
-
-// Responsive image component for package cards
-function ResponsivePackageImage({src, alt}: {src: string; alt: string}) {
-  const basePath = `${CDN_URL}/images/packages/${src}`;
-  
+// Simple image component for package cards using local images
+function PackageImage({src, alt}: {src: string; alt: string}) {
   return (
-    <picture>
-      <source
-        srcSet={`${basePath}-640w.avif 640w, ${basePath}-480w.avif 480w, ${basePath}-320w.avif 320w`}
-        type="image/avif"
-        sizes="(max-width: 768px) 100vw, 400px"
-      />
-      <source
-        srcSet={`${basePath}-640w.webp 640w, ${basePath}-480w.webp 480w, ${basePath}-320w.webp 320w`}
-        type="image/webp"
-        sizes="(max-width: 768px) 100vw, 400px"
-      />
-      <img
-        src={`${basePath}-480w.jpg`}
-        srcSet={`${basePath}-640w.jpg 640w, ${basePath}-480w.jpg 480w, ${basePath}-320w.jpg 320w`}
-        sizes="(max-width: 768px) 100vw, 400px"
-        alt={alt}
-        className="pricing-card-image"
-        loading="lazy"
-        decoding="async"
-      />
-    </picture>
+    <img
+      src={`/images/packages/${src}.jpeg`}
+      alt={alt}
+      className="pricing-card-image"
+      loading="lazy"
+      decoding="async"
+    />
   );
 }
 
@@ -138,9 +120,9 @@ export default function Packages() {
           {currentPackages.map((pkg, index) => (
             <div key={index} className="pricing-card">
               {pkg.image && (
-                <ResponsivePackageImage 
-                  src={pkg.image} 
-                  alt={`${pkg.name} Package`} 
+                <PackageImage
+                  src={pkg.image}
+                  alt={`${pkg.name} Package`}
                 />
               )}
               <div className="pricing-card-content">
