@@ -263,6 +263,29 @@
     "hours": "Mon-Sat: 8AM - 6PM",
     "copyright": "© 2026 Car Detailing Reno. All rights reserved."
   },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Don't just take our word for it - hear from our satisfied customers",
+    "verified": "Verified Customer",
+    "seeAllReviews": "See All Reviews on Google",
+    "reviews": {
+      "1": {
+        "quote": "Best detail I've ever had! My car looks brand new. The attention to detail is incredible - they even got into all the little crevices I didn't know existed. Highly recommend!",
+        "name": "Michael R.",
+        "location": "Reno, NV"
+      },
+      "2": {
+        "quote": "Had the ceramic coating done and wow! Water just beads right off. The team was professional, on time, and the results speak for themselves. Worth every penny.",
+        "name": "Sarah T.",
+        "location": "Sparks, NV"
+      },
+      "3": {
+        "quote": "They came to my office and detailed my truck while I worked. So convenient! The interior looks and smells amazing. Already booked my next appointment.",
+        "name": "David L.",
+        "location": "Spanish Springs, NV"
+      }
+    }
+  },
   "servicesPage": {
     "title": "Our Services",
     "subtitle": "Professional auto detailing services",

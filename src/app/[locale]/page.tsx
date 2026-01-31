@@ -2,6 +2,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {routing} from '../../../i18n/routing';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import Testimonials from '@/components/Testimonials';
 import Packages from '@/components/Packages';
 import QuickAppointments from '@/components/QuickAppointments';
 import CTASection from '@/components/CTASection';
@@ -33,6 +34,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
     <>
       <Hero />
       <Services />
+      <Testimonials />
       <Packages />
       <QuickAppointments />
       <CTASection />
