@@ -1,10 +1,14 @@
 {
   "/[locale]/about/page": "app/[locale]/about/page.js",
   "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/faq/page": "app/[locale]/faq/page.js",
   "/[locale]/page": "app/[locale]/page.js",
   "/[locale]/portfolio/page": "app/[locale]/portfolio/page.js",
+  "/[locale]/services/ceramic-coating/page": "app/[locale]/services/ceramic-coating/page.js",
+  "/[locale]/services/exterior/page": "app/[locale]/services/exterior/page.js",
   "/[locale]/services/interior/page": "app/[locale]/services/interior/page.js",
   "/[locale]/services/page": "app/[locale]/services/page.js",
   "/_global-error/page": "app/_global-error/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
 }

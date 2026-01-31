@@ -1,11 +1,12 @@
-"use client";
-
-import { useEffect } from "react";
-
 export default function Home() {
-  useEffect(() => {
-    window.location.replace("/en");
-  }, []);
-
-  return <p style={{ padding: 24 }}>Redirecting…</p>;
+  return (
+    <html>
+      <head>
+        <meta httpEquiv="refresh" content="0; url=/en/" />
+      </head>
+      <body style={{ padding: 24 }}>
+        <a href="/en/">Go to English</a>
+      </body>
+    </html>
+  );
 }

@@ -60,6 +60,14 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/contact(?:/)?$"
     },
     {
+      "page": "/[locale]/faq",
+      "regex": "^/([^/]+?)/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/faq(?:/)?$"
+    },
+    {
       "page": "/[locale]/portfolio",
       "regex": "^/([^/]+?)/portfolio(?:/)?$",
       "routeKeys": {
@@ -76,6 +84,22 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services(?:/)?$"
     },
     {
+      "page": "/[locale]/services/ceramic-coating",
+      "regex": "^/([^/]+?)/services/ceramic\\-coating(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ceramic\\-coating(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/exterior",
+      "regex": "^/([^/]+?)/services/exterior(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/exterior(?:/)?$"
+    },
+    {
       "page": "/[locale]/services/interior",
       "regex": "^/([^/]+?)/services/interior(?:/)?$",
       "routeKeys": {
@@ -85,6 +109,12 @@
     }
   ],
   "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
     {
       "page": "/_global-error",
       "regex": "^/_global\\-error(?:/)?$",
